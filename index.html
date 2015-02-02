@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"> <!--language is english-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--tell internet explorer give the user most up-to-date experience-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for mobile, how to display the page initially when it loads-->
+    <link rel="shortcut icon" href="images/favicon.ico" /> <!--display favicon in title-->
+    <title>Monroe County Energy Challenge</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
+    <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <!--There are 3 big main boxes: top, middle, bottom-->
+  <body>
+    <!--the whole box-->
+    <div class="container"> 
+      <!--first top box-->
+      <header class="row"> 
+      	<!--box for udacity logo-->
+        <div class="col-md-6 move-lower"> 
+          <img class="img-responsive title-logo" src="images/logo.png" alt="Dr. Freeze logo" >
+        </div>
+				
+        <!--box for Dr. Freeze text-->
+        <div class="col-md-6 text-right text-uppercase"> <!--to move text to the right; to capitalize all the text-->
+          <h1 class="text-capitalize title-super text-thick move-much-lower"><em>Save Energy, Save The World</em></h1> <!--first important title so use h1-->
+        </div> 
+      </header>
+
+        <section class="row text-center move-to-right">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">About Us</a></li>
+          <li role="presentation"><a href="#">Get Involve</a></li>
+          <li role="presentation"><a href="#">Contact Us</a></li>
+        </ul>
+      </section>
+				
+      <!--box for horizontal line-->
+      <div class="row upper-line">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+
+
+	       <!--main slideshow-->		
+         <!--image slideshow-->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/main1.jpg" alt="...">
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/main2.jpg" alt="...">
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/main3.jpg" alt="...">
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+
+			
+      <!--third bottom box-->
+      <!--box for featured ice cream-->
+      <div class="row featured-lower">
+        <div class="col-md-12">
+          <h2 class="text-muted">Our Programs</h2> <!--second important title so use h2-->
+        </div>
+      </div>
+			
+      <!--box for 4 images in bottom-->
+      <section class="row text-center">
+        <!--first picture-->
+        <article class="col-md-6 move-right">  
+          <!--img-responsive is to makesure the picture stays in the container area-->
+          <img class="img-responsive" src="images/save1.jpg" alt="Tripple Chocolate">
+          <div class="row">
+            <h3 class="text-uppercase">Save the light</h3>
+            <p>Don't forget to turn off the light bla bla bla</p>
+          </div>
+        </article>
+        <!--second picture-->
+        <article class="col-md-6 move-right">
+          <img class="img-responsive" src="images/save1.jpg" alt="Rhum Raisin">
+          <div class="row">
+            <h3 class="text-uppercase">Save the light</h3>
+            <p>Don't forget to turn off the light bla bla bla</p>
+          </div>
+        </article>
+
+        <!--third picture-->
+        <article class="col-md-6 move-right">
+          <!--img-responsive is to makesure the picture stays in the container area-->
+          <img class="img-responsive" src="images/save1.jpg" alt="Sea Salt Caramel">
+          <div class="row">
+            <h3 class="text-uppercase">Save the light</h3>
+            <p>Don't forget to turn off the light bla bla bla</p>
+          </div>
+        </article>
+        <!--fourth picture-->
+        <article class="col-md-6">
+          <img class="img-responsive  move-right" src="images/save1.jpg" alt="Strawberry Crumble">
+          <div class="row">
+            <h3 class="text-uppercase">Save the light</h3>
+            <p>Don't forget to turn off the light bla bla bla</p>
+          </div>
+        </article>
+      </section>
+
+    </div>
+  </body>
+</html>

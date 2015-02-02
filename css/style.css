@@ -1,0 +1,87 @@
+/*style the font*/
+body {
+  font-family: 'Lora', serif;
+  color: #3fa2da; 
+}
+
+
+@media (max-width: 990px) {
+  h1, 
+  h2,
+  h4 {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+
+/*Header*/
+
+
+/*give space for the logo from the top*/
+.move-lower {
+  padding-top: 15px;
+}
+
+.move-much-lower {
+  padding-top: 30px;
+}
+
+
+/*change dr. freeze font size*/
+.title-super {
+  font-size: 30px;
+}
+
+
+/*class to make the text thick for Dr. Freeze*/
+.text-thick {
+  font-weight: 300; /*thicker version of the google font*/
+}
+
+
+/*make the line thicker*/
+hr {
+  background-color: #75deec;
+  height: 4px;
+}
+
+
+/*give different framing for the picture*/
+.framing {
+  -webkit-border-top-left-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -moz-border-radius-topleft: 40px;
+  -moz-border-radius-bottomright: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+
+ /*Featured work section/
+
+
+/*give space before the text featured ice cream*/  
+.featured-lower {
+  padding-top: 20px;
+}
+
+
+/*class to make the text muted for Featured ice cream*/
+.text-muted {
+  font-weight: 400; /*thinner version of the google font*/
+  color: #3fa2da;
+}
+
+.move-right {
+  padding-left: 200px;
+}
+
+.move-to-right {
+  padding-left: 400px;
+}
