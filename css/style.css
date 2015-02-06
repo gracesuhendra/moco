@@ -48,6 +48,7 @@ hr {
   background-color: #75deec;
   height: 4px;
   margin-top: 0px;
+  padding-top: 0px;
 }
 
 
@@ -119,11 +120,9 @@ hr {
    margin:0;
    padding:.6em .5em .4em;
    font-size:1em;
-   line-height:1em;
    text-decoration:none;
    color:#444;
    font-weight:bold;
-   border-bottom:1px solid #000;
 }
 
 #centeredmenu ul li a:hover {
@@ -181,6 +180,10 @@ hr {
 #centeredmenu ul li:hover ul,
 #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
    display:block; /* Show the sub menus */
+}
+
+.space-below {
+  padding-bottom: 50px;
 }
 	
 	
