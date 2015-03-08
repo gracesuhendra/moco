@@ -33,6 +33,8 @@ body {
 
 .move-lower {
   padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 
@@ -42,11 +44,14 @@ hr {
   height: 4px;
   margin-top: 0px;
   padding-top: 0px;
+  width: 100%;
 }
 
 
  /*navigation/
 /* Main menu settings */
+
+
 #centeredmenu {
    clear:both;
    float:left;
@@ -89,13 +94,11 @@ hr {
 #centeredmenu ul li a:hover {
    background:#36f; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #03f;
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
-   background:gray; /* Top menu items background colour */
+   background:#C5BBBB; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #03f;
 }
 
 /* Submenu items */
@@ -118,15 +121,13 @@ hr {
 #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
    font-size:.8em;
    font-weight:normal; /* resets the bold set for the top level menu items */
-   color:#444;
-   line-height:1.4em; /* overwrite line-height value from top menu */
-   border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+
 }
 #centeredmenu ul ul li a:hover,
 #centeredmenu ul li.active ul li a:hover,
 #centeredmenu ul li:hover ul li a:hover,
 #centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
-   background:#36f; /* Sub menu items background colour */
+   background:#AED9F2; /* Sub menu items background colour */
    color:#fff;
 }
 
@@ -153,6 +154,18 @@ h3 {
 
 .img-centered {
   margin-left: 40px;
+}
+
+.make-border {
+    outline: 4px solid black;
+}
+
+.text-big {
+  font-size: 50px;
+}
+
+.make-space-below {
+  margin-bottom: 50px;
 }
 
 
