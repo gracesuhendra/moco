@@ -10,7 +10,7 @@ var bio = {
     "location": "South Korea"
   },
   "bioPic": "images/biopic.jpg",
-  "skills": ["JavaScript", "HTML&CSS", "Python", "Java", "jQuery"],
+  "skills": ["Python", "Java", "HTML&CSS", "JavaScript", "Google App Engine"],
   display: function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -37,7 +37,7 @@ var bio = {
   }
 };
 
-var des = "Iâ€™m a self-taught front-end web developer, and I love learning and coding. <br><br>I love to learn how programs work, and make my own program to solve the challenging problems. Programming has been always a fun activity for me and I'm really excited to learn new skills and technologies. <br><br>My goal is to work in US and contribute my skills to make big changes.";
+var des = "Once an athlete, now a developer. <br><br>I'm currently learning and developing front-end web, but my interests are not limited to front-end. I'm also very interested in back-end, mobile apps, and machine learning. <br>My goal is to work as a software engineer in US and contribute to big changes."
 
 var summary = {
   "description": des,
@@ -171,31 +171,6 @@ var education = {
     "school": "Udacity",
     "dates": "October 2014 - October 2014",
     "url": "https://www.udacity.com/course/ud015"
-  }, {
-    "title": "Intro to jQuery",
-    "school": "Udacity",
-    "dates": "November 2014 - November 2014",
-    "url": "https://www.udacity.com/course/ud245"
-  }, {
-    "title": "Programming Languages",
-    "school": "Udacity",
-    "dates": "November 2014 - November 2014",
-    "url": "https://www.udacity.com/course/cs262"
-  }, {
-    "title": "Intro to AJAX",
-    "school": "Udacity",
-    "dates": "November 2014 - November 2014",
-    "url": "https://www.udacity.com/course/ud110"
-  }, {
-    "title": "Developing Android Apps",
-    "school": "Udacity",
-    "dates": "November 2014 - December 2014",
-    "url": "https://www.udacity.com/course/ud853"
-  }, {
-    "title": "Design of Computer Programs",
-    "school": "Udacity",
-    "dates": "December 2014 - December 2014",
-    "url": "https://www.udacity.com/course/cs212"
   }],
   displaySchools: function() {
     for (var e in education.schools) {
@@ -234,38 +209,32 @@ var project = {
     "title": "DW WIKI",
     "url": "http://dw-wiki.appspot.com",
     "dates": "2014",
-    "description": "This web app a wiki page that anyone can signin and write or modify the posts, and it was a final project for Udacity course cs253 (Web Development). The project was built on Google App Engine with Jinja2 template, and I used Google Web Starter Kit for multi-device responsiveness.",
+    "description": "This web app was a final project for Udacity course cs253 (Web Development). The project was built on Google App Engine, and I've combined the project with Google Web Starter Kit.",
     "image": "images/dw_wiki_s_mini.jpg"
   }, {
     "title": "Conference Central",
     "url": "https://dw-scalable.appspot.com",
     "dates": "2014",
-    "description": "This web app is a conference organizing app, and it was a final project for Udacity course ud859 (Developing Scalable Apps with Java). The project was built on Google App Engine, and the layout of the page was given by Udacity and I wrote APIs for the app.",
+    "description": "This web app was a final project for Udacity course ud859 (Developing Scalable Apps with Java). The project was built on Google App Engine.",
     "image": "images/dw_scalable_s_mini.jpg"
   }, {
     "title": "DW Portfolio",
     "url": "http://dw-portfolio.appspot.com",
     "dates": "2014",
-    "description": "This web page is my portfolio page, and it was the first project for Udacity's Front-End Nanodegree. The project was built on Google App Engine with Bootstrap, and the project was focused on using Bootstrapâ€™s grid styling system to style the responsive and organized wep page more easily.",
+    "description": "This web page was a project for Udacity nanodegree. The project was built on Google App Engine and Bootstrap.",
     "image": "images/dw_portfolio_s.jpg"
   }, {
     "title": "DW Resume",
     "url": "http://dw-resume.appspot.com",
     "dates": "2014",
-    "description": "This web page is my resume page, and it was the second project for Udacity's Front-End Nanodegree. The project was built on Google App Engine, and the project was focused on using JSON like objects to manage content more efficiently.",
+    "description": "This web page was a project for Udacity nanodegree. The project was built on Google App Engine.",
     "image": "images/dw_resume_s.png"
   }, {
     "title": "DW Frogger",
     "url": "http://dw-frogger.appspot.com",
     "dates": "2014",
-    "description": "This web page was the third project for Udacity's Front-End Nanodegree. The project was built on Google App Engine, and the project was focused on using JavaScript and Canvas to make a classic arcade game on a web page.",
+    "description": "This web page was a project for Udacity nanodegree. The project was built on Google App Engine.",
     "image": "images/dw_frogger_s.png"
-  }, {
-    "title": "DW Neighborhood",
-    "url": "http://dw-neighborhood.appspot.com",
-    "dates": "2014",
-    "description": "This web app is a neighborhood map page that shows popular places in the user defined location, and it was the fifth project for Udacity's Front-End Nanodegree. The project was built on Google App Engine, with Knockout.js framework. The project was focused on using external APIs and MVVM pattern to make a single page web app.",
-    "image": "images/dw_neighborhood_s.jpg"
   }],
   display: function() {
     for (var e in project.projects) {
