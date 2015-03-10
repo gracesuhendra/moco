@@ -29,33 +29,34 @@ var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 var HTMLskillsStart = "<h3 id='skillsH3'>Skills at a Glance:</h3><ul id='skills' class='flex-box'></ul>";
 var HTMLskills = "<li class='flex-item'><span class='white-text'>%data%</span></li>";
 
+var HTMLsumStart = "<div class='sum-entry'></div>";
+var HTMLsumDescription = "<p class='desc'>%data%</p>";
+
 var HTMLworkStart = "<div class='work-entry'></div>";
-var HTMLworkEmployer = "<a href='%url%' target='_blank'>%data%";
+var HTMLworkEmployer = "<a class='no-click' href='#'>%data%";
 var HTMLworkTitle = " - %data%</a>";
 var HTMLworkDates = "<div class='date-text'>%data%</div>";
 var HTMLworkLocation = "<div class='location-text'>%data%</div>";
-var HTMLworkDescription = "<p><br>%data%</p>";
+var HTMLworkDescription = "<p class='desc'><br>%data%</p>";
 
 var HTMLprojectStart = "<div class='project-entry'></div>";
 var HTMLprojectTitle = "<a href='%url%' target='_blank'>%data%</a>";
 var HTMLprojectDates = "<div class='date-text'>%data%</div>";
 var HTMLprojectDescription = "<p><br>%data%</p>";
-var HTMLprojectImage = "<img src='%data%'>";
+var HTMLprojectImage = "<img class='project-img' src='%data%'><br><hr class='section-hr'>";
 
-var HTMLschoolLists = "<h3>Formal Education</h3>";
 var HTMLschoolStart = "<div class='education-entry'></div>";
-var HTMLschoolName = "<a href='%url%' target='_blank'>%data%";
+var HTMLschoolName = "<a class='no-click' href='#'>%data%";
 var HTMLschoolDegree = " -- %data%</a>";
 var HTMLschoolDates = "<div class='date-text'>%data%</div>";
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
 var HTMLschoolMajor = "<em><br>Major: %data%</em>"
 
-var HTMLonlineClasses = "<h3>Online Classes</h3>";
-var HTMLonlineStart = "<div class='online-entry'></div>";
+var HTMLonlineClasses = "<h3 id='OC-title'>Online Courses</h3>";
 var HTMLonlineTitle = "<a href='%url%' target='_blank'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div>";
-var HTMLonlineURL = "<br><a href='%url%' target='_blank'>%data%</a>";
+var HTMLonlineURL = "<br><a href='#'>%data%</a>";
 
 var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";
@@ -66,8 +67,8 @@ The International Name challenge in Lesson 2 where you'll create a function that
 */
 $(document).ready(function() {
   $('button').click(function() {
-    var iName = inName() || function(){};
-    $('#name').html(iName);  
+    var iName = inName() || function() {};
+    $('#name').html(iName);
   });
 })
 
@@ -78,18 +79,16 @@ The next few lines about clicks are for the Collecting Click Locations quiz in L
 */
 clickLocations = [];
 
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      "x": x,
-      "y": y
-    }
-  );
+function logClicks(x, y) {
+  clickLocations.push({
+    "x": x,
+    "y": y
+  });
   console.log("x location: " + x + "; y location: " + y);
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  logClicks(loc.pageX, loc.pageY);
 });
 
 
@@ -128,7 +127,8 @@ function initializeMap() {
     // initializes an empty array
     var locations = ["Phuket", "Bangkok", "Vancouver", "Rotorua", "Seoul"];
 
-
+    // adds the single location property from bio to the locations array
+    locations.push(bio.contacts.location);
 
     // iterates through school locations and appends each location to
     // the locations array
@@ -136,6 +136,11 @@ function initializeMap() {
       locations.push(education.schools[school].location);
     }
 
+    // iterates through work locations and appends each location to
+    // the locations array
+    for (var job in work.jobs) {
+      locations.push(work.jobs[job].location);
+    }
 
     return locations;
   }
