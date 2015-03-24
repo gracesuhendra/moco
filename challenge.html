@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--tell internet explorer give the user most up-to-date experience-->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for mobile, how to display the page initially when it loads-->
-    <link rel="shortcut icon" href="images/favicon.ico" /> <!--display favicon in title-->
+    <link rel="shortcut icon" href="images/logo.ico" /> <!--display logo icon in title-->
     <title>Monroe County Energy Challenge</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
     <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
     <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </head>
 
   <!--There are 3 big main boxes: top, middle, bottom-->
@@ -19,96 +19,120 @@
     <div class="container"> 
       <!--first top box-->
       <header class="row"> 
-        <!--box for udacity logo-->
+        <!--box for mcec logo-->
         <div class="col-md-4"> 
-          <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="Dr. Freeze logo" ></a>
+          <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="MCEC logo" ></a>
         </div>
         
-        <!--box for Dr. Freeze text-->
-        <div class="col-md-8 text-right"> <!--to move text to the right; to capitalize all the text-->
-          <h1 class="text-capitalize title-super text-thick move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
+        <!--box for slogan-->
+        <div class="col-md-8 text-right"> <!--to move text to the right-->
+          <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
       </header>
 
 
       <!--box for horizontal line-->
-      <div class="row upper-line">
+      <div class="row">
         <div class="col-md-12">
           <hr>
         </div>
       </div>
 
 
-       <div class="row space-below">
-        <div id="centeredmenu">
-          <nav> <!--menu navigation links-->
-            <ul>
-              <li>
-                <a href="about.html">About Us</a>
-                <ul> <!--submenu links-->
-                  <li><a href="prize.html">The Prize</a></li>
-                  <li><a href="challenge.html">The Challenge</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </li>
-    
-              <li>
-                <a href="products.html">News &amp; Events</a>
-                <ul>
-                  <li><a href="task.html">Task of The Month</a></li>
-                  <li><a href="drsignature.html">Dsubmenu</a></li>
-                  <li><a href="price.html">submenu</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="school.html">In Your School</a>
-                <ul>
-                  <li><a href="events.html">submenu</a></li>
-                  <li><a href="press.html">submenu</a></li>
-                </ul>
-              </li>
-    
-              <li>
-                <a href="connect.html">In Your Home</a>
-                <ul>
-                  <li><a href="contactus.html">submenu</a></li>
-                  <li><a href="franchise.html">submenu</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="connect.html">In Your Workplace</a>
-                <ul>
-                  <li><a href="contactus.html">submenu</a></li>
-                  <li><a href="franchise.html">submenu</a></li>
-                </ul>
-              </li>
+      <nav class="navbar navbar-default">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">About MCEC</a></li>
+              <li class="divider"></li>
+              <li><a href="prize.html">The Prize</a></li>
+              <li class="divider"></li>
+              <li><a href="challenge.html">The Challenge</a></li>
+              <li class="divider"></li>
+              <li><a href="partners.html">Our Partners</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    
-	  
+          </li>
+        </ul>  
 
-	    <!--main slideshow-->		
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News & Events <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your School <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="participant.html">Participants</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your Home <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="task.html">Task of The Month</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your Workplace <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Submenu</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+    
+    
+    
+	  	<!--main content-->		
       <div class="row">
+        <!--picture-->
         <div class="col-md-6">
-          <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFrbs0xSft98.kksRqTpZOs3k" width="550" height="500"></iframe>  
+          <img class="img-responsive" src="images/main5.jpg" alt="...">  
         </div>
+        <!--text-->
         <div class="col-md-6">
-          <div class="change-font-size map-space">
-            The 50 Semifinalists (Monroe County IS one of the 50 Semifinalists) have developed a long-term energy efficiency plan, and are now demonstrating its initial effectiveness and sustainability over a two-year period. Communities will be judged in part on their ability to:<br/>
+          <h1>The Challenge</h1>
+          <div class="change-font-size">
+            Accepting the challenge to participate in the GUEP,  Monroe County has done the following:
             <ul>
-              <li>Spur innovative approaches for communities to decrease their per-capita energy usage</li>
-              <li>Highlight best practices for communities working with utilities, businesses, and their local governments to create and implement inventive plans for sustained energy efficiency</li>
-              <li>Educate the public and engage students in energy efficiency issues including methods, benefits, and the environmental costs of the full fuel cycle</li>
+              <li>Established an organizing body called the Monroe County Energy Challenge Task Force   (with a link for more details on the task force)</li>
+              <li>Developed an Energy Plan which describes how our community will become more energy efficient and how we intend to comply with the requirements of the GUEP (with a link to “THE PLAN”)</li>
+              <li>Secured the support and participation of all applicable utility partners  (link here to Utility Partners)</li>
+              <li>Enlisted the support of many public and private schools (link here to participating schools)</li>
+              <li>Engaged a group of fantastic volunteers to implement the Energy Plan</li>
             </ul>
           </div>
+        </div>
       </div>
 
-    </div>
-
+<footer>
+    <!--insert image for special characters-->
+        <p> <img src="images/phone.png" width="16" height="16" alt="" /> (812)349-3837 <img src="images/mail.png" width="16" height="16" alt="" /> mocoenergychallenge@gmail.com </p>
+      </footer>
+      
     </div>
   </body>
 </html>

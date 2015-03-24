@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--tell internet explorer give the user most up-to-date experience-->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for mobile, how to display the page initially when it loads-->
-    <link rel="shortcut icon" href="images/favicon.ico" /> <!--display favicon in title-->
+    <link rel="shortcut icon" href="images/logo.ico" /> <!--display logo icon in title-->
     <title>Monroe County Energy Challenge</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
     <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
     <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </head>
 
   <!--There are 3 big main boxes: top, middle, bottom-->
@@ -19,90 +19,111 @@
     <div class="container"> 
       <!--first top box-->
       <header class="row"> 
-      	<!--box for udacity logo-->
-        <div class="col-md-4 move-lower"> 
-          <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="Dr. Freeze logo" ></a>
+        <!--box for mcec logo-->
+        <div class="col-md-4"> 
+          <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="MCEC logo" ></a>
         </div>
-				
-        <!--box for Dr. Freeze text-->
-        <div class="col-md-8 text-right text-uppercase"> <!--to move text to the right; to capitalize all the text-->
-          <h1 class="text-capitalize title-super text-thick move-much-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
+        
+        <!--box for slogan-->
+        <div class="col-md-8 text-right"> <!--to move text to the right-->
+          <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
       </header>
 
 
       <!--box for horizontal line-->
-      <div class="row upper-line">
+      <div class="row">
         <div class="col-md-12">
           <hr>
         </div>
       </div>
 
 
-       <div class="row space-below">
-        <div id="centeredmenu">
-          <nav> <!--menu navigation links-->
-            <ul>
-              <li>
-                <a href="about.html">About Us</a>
-                <ul> <!--submenu links-->
-                  <li><a href="prize.html">The Prize</a></li>
-                  <li><a href="challenge.html">The Challenge</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </li>
-    
-              <li>
-                <a href="products.html">News &amp; Events</a>
-                <ul>
-                  <li><a href="task.html">Task of The Month</a></li>
-                  <li><a href="drsignature.html">Dsubmenu</a></li>
-                  <li><a href="price.html">submenu</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="school.html">In Your School</a>
-                <ul>
-                  <li><a href="events.html">submenu</a></li>
-                  <li><a href="press.html">submenu</a></li>
-                </ul>
-              </li>
-    
-              <li>
-                <a href="connect.html">In Your Home</a>
-                <ul>
-                  <li><a href="contactus.html">submenu</a></li>
-                  <li><a href="franchise.html">submenu</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="connect.html">In Your Workplace</a>
-                <ul>
-                  <li><a href="contactus.html">submenu</a></li>
-                  <li><a href="franchise.html">submenu</a></li>
-                </ul>
-              </li>
+      <nav class="navbar navbar-default">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">About MCEC</a></li>
+              <li class="divider"></li>
+              <li><a href="prize.html">The Prize</a></li>
+              <li class="divider"></li>
+              <li><a href="challenge.html">The Challenge</a></li>
+              <li class="divider"></li>
+              <li><a href="partners.html">Our Partners</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
+          </li>
+        </ul>  
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="news.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News & Events <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your School <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="participant.html">Participants</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your Home <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="task.html">Task of The Month</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">In Your Workplace <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Submenu</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Submenu</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
     
 	  
 
-	    <!--main slideshow-->		
+	    <!--main content-->		
       <div class="row">
-        <div class="col-md-12">
-          <h1>Contact Us</h1>
-          <p><img src="images/phone.png">(812) 349-3837</p>
+        <h1>Contact Us</h1>
+        <!--video-->
+        <br/>
+        <div>
+          The Monroe County Energy Challenge (MCEC) is a joint effort of various <a href="partners.html">community partners</a> in Monroe County. <br/>
 
-
-
+          Want to know more?<br/>
+          Email: mocoenergychallenge@gmail.com<br/> 
+          Facebook: www.facebook.com/mocoenergychallenge<br/> 
+          Twitter: @mocoenergy<br/> 
+          Phone: 812.349.3837<br/> 
 
         </div>
-      </div>
 
+      </div>
+      
     </div>
   </body>
 </html>
