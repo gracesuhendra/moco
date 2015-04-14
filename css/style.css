@@ -17,6 +17,10 @@ body {
   }
 }
 
+p, ul {
+  font-size: 18px;
+}
+
 /*Header style*/
 
 /*change slogan font size*/
@@ -205,6 +209,70 @@ footer p {
   font-size: 20px;
   color: white;
   }
+
+
+#faq {
+  color: white;
+  margin: 0;
+  padding-bottom: 3em;
+  }
+
+.questionslist {
+  padding-bottom: 3em;
+  }
+  
+.desc {
+  padding: 0;
+  margin: 1em 0 0 2em;
+  }
+  
+  
+.answer {
+  padding: 0;
+  margin: 1em 0 0 2em;
+  font-weight: bold;
+  }
+  
+.toplink {
+  text-align: right;
+  padding: 0 1em 0.25em 0;
+  margin: 0;
+  clear: right;
+  }
+
+  
+#faq, #press, #events a:link {
+  color: black;
+  }
+  
+  
+#faq, #press, #events  a:visited {
+  color: #C6A971;
+  }
+  
+  
+#faq, #press, #events  a:hover {
+  color: #3F7AB1;
+  }
+  
+  
+#faq, #press, #events  a:active {
+  color: black;
+  }
+
+.modal p {
+    word-wrap: break-word;
+}
+
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
+
+.modal-body {
+  text-align: left;
+}
+  
 
 
 

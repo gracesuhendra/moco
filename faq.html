@@ -13,21 +13,26 @@
     <script src="js/bootstrap.js"></script>
   </head>
 
-  <!--There are 3 big main boxes: top, middle, bottom-->
+
   <body>
-    <!--the whole box-->
+    <!--the whole page/box-->
     <div class="container"> 
-      <!--first top box-->
+
+      <!--box for logo and slogan-->
       <header class="row"> 
+
         <!--box for mcec logo-->
         <div class="col-md-4"> 
           <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="MCEC logo" ></a>
         </div>
+        <!--end of logo box-->
         
         <!--box for slogan-->
         <div class="col-md-8 text-right"> <!--to move text to the right-->
           <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
+        <!--end of slogan box-->
+
       </header>
 
 
@@ -37,18 +42,22 @@
           <hr>
         </div>
       </div>
+      <!--end of horizontal line-->
 
-
+      <!--box for navigation-->
       <nav class="navbar navbar-default">
-      <!-- Collect the nav links, forms, and other content for toggling -->
 
+        <!--navigation for home-->
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
         </ul>
+        <!--end of home-->
 
+        <!--navigation for about us-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="about.html">About MCEC</a></li>
               <li class="divider"></li>
@@ -58,16 +67,23 @@
               <li class="divider"></li>
               <li><a href="partners.html">Our Partners</a></li>
               <li class="divider"></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li class="divider"></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </li>
         </ul>  
+        <!--end of about us-->
 
+        <!--navigation for news and events-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News & Events<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="social.html">Social</a></li>
+              <li class="divider"></li>
+              <li><a href="calendar.html">Calendar</a></li>
               <li class="divider"></li>
               <li><a href="http://mocoenergychallenge.org/" target="_blank">Blog</a></li>
               <li class="divider"></li>
@@ -75,10 +91,13 @@
             </ul>
           </li>
         </ul>
+        <!--end of news and events-->
 
+        <!--navigation for Schools-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Schools<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="schooltips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
@@ -88,23 +107,35 @@
             </ul>
           </li>
         </ul>
+        <!--end of schools-->
 
+        <!--navigation for residents-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Residents<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="hometips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
-              <li><a href="task.html">Task of The Month</a></li>
+              <li><a href="checklist.html">Checklist</a></li>
+              <li class="divider"></li>
+              <li><a href="task.html">Task of the Month</a></li>
+              <li class="divider"></li>
+              <li><a href="resources.html">Resources</a></li>
               <li class="divider"></li>
               <li><a href="video.html">Video</a></li>
+              <li class="divider"></li>
+              <li><a href="rc.html">Committee</a></li>
             </ul>
           </li>
         </ul>
+        <!--end of residents-->
 
+        <!--navigation for works-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Local Government<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="worktips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
@@ -112,49 +143,59 @@
             </ul>
           </li>
         </ul>
+        <!--end of works-->
 
       </nav>
-	  
+      <!--end of navigation-->
 
-	     <div class="row">  
-        <h2>Energy Lessons</h2>
+      <!--start content-->
+      <div class="row">
+        <h2>Frequently Asked Questions</h2>
         <br/>
         <br/>
 
-        <ul class="nav nav-tabs make-space-below">
-          <li role="presentation"><a href="classroom.html">Lessons in Classroom</a></li>
-          <li role="presentation"  class="active"><a href="school.html">Management in Schools</a></li>
-          <li role="presentation"><a href="#">Education Committee Members</a></li>
-        </ul>
+        <!--list of question-->
+        <div class="questionslist">
+          <p id="faq">
+            <a href="#q1">This is where question 1 go?</a><br />
+            <a href="#q2">This is where question 2 go?</a><br /> 
+            <a href="#q3">This is where question 3 go?</a><br /> 
+            <a href="#q4">This is where question 4 go?</a>
+          </p>
+        </div>
+        <!--end of questions-->
+
+        <!--start list of q and a-->
+        <div>
+
+          <!--q and a-->
+          <p id="q1" class="desc">This is where question 1 go?</p>
+          <p class="answer">This is where answer from question 1 go</p>
+          <p class="toplink"><a href="#top">Back to top</a></p>
+      
+          <!--q and a-->
+          <p id="q2" class="desc">This is where question 2 go?</p>
+          <p class="answer">This is where answer from question 2 go</p>
+          <p class="toplink"><a href="#top">Back to top</a></p>
+    
+          <!--q and a-->
+          <p id="q3" class="desc">This is where question 3 go?</p>
+          <p class="answer">This is where answer from question 3 go</p>
+          <p class="toplink"><a href="#top">Back to top</a></p>
+      
+          <!--q and a-->
+          <p id="q4" class="desc">This is where question 4 go?</p>
+          <p class="answer">This is where answer from question 3 go</p>
+          <p class="toplink"><a href="#top">Back to top</a></p>
+    
+        </div>
+        <!--end q and a-->
+
       </div>
+      <!--end of content-->
 
-        <section class="row make-space-below">
-          <div class="col-md-6">
-            <div class="col-md-6">
-              <img class="img-responsive" src="http://placehold.it/300x400">
-            </div>
-            <div class="col-md-6">
-              <p>Changing to more efficient LED lighting in ______________ would save the
-
-MCCSC $x______, according to Dean Walendzak, MCCSC Environmental Technician.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="col-md-6">
-              <img class="img-responsive" src="http://placehold.it/300x400">
-            </div>
-            <div class="col-md-6">
-              <p>This is how MCCSC building managers track progress towards their energy
-
-conservation goals.</p>
-            </div>
-          </div>
-        </section>
-
-      
-
-      
     </div>
+    <!--end of page-->
+    
   </body>
 </html>

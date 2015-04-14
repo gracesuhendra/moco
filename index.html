@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"> <!--language is english-->
   <head>
     <meta charset="utf-8">
@@ -13,21 +13,26 @@
     <script src="js/bootstrap.js"></script>
   </head>
 
-  <!--There are 3 big main boxes: top, middle, bottom-->
+
   <body>
-    <!--the whole box-->
+    <!--the whole page/box-->
     <div class="container"> 
-      <!--first top box-->
+
+      <!--box for logo and slogan-->
       <header class="row"> 
+
       	<!--box for mcec logo-->
         <div class="col-md-4"> 
           <a href="index.html"><img class="img-responsive title-logo" src="images/logo.png" alt="MCEC logo" ></a>
         </div>
+        <!--end of logo box-->
 				
         <!--box for slogan-->
         <div class="col-md-8 text-right"> <!--to move text to the right-->
           <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
+        <!--end of slogan box-->
+
       </header>
 
 
@@ -37,43 +42,48 @@
           <hr>
         </div>
       </div>
+      <!--end of horizontal line-->
 
-
+      <!--box for navigation-->
       <nav class="navbar navbar-default">
-      <!-- Collect the nav links, forms, and other content for toggling -->
 
+        <!--navigation for home-->
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
         </ul>
+        <!--end of home-->
 
+        <!--navigation for about us-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="about.html">About MCEC</a></li>
               <li class="divider"></li>
-              <li><a href="prize.html">The Prize</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Test Page</a></li>
-                </ul>
-              </li>
+              <li><a href="prize.html">The Prize</a></li>
               <li class="divider"></li>
               <li><a href="challenge.html">The Challenge</a></li>
               <li class="divider"></li>
               <li><a href="partners.html">Our Partners</a></li>
               <li class="divider"></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li class="divider"></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </li>
         </ul>  
+        <!--end of about us-->
 
-
-
+        <!--navigation for news and events-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News & Events<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="social.html">Social</a></li>
+              <li class="divider"></li>
+              <li><a href="calendar.html">Calendar</a></li>
               <li class="divider"></li>
               <li><a href="http://mocoenergychallenge.org/" target="_blank">Blog</a></li>
               <li class="divider"></li>
@@ -81,10 +91,13 @@
             </ul>
           </li>
         </ul>
+        <!--end of news and events-->
 
+        <!--navigation for Schools-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Schools<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="schooltips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
@@ -94,25 +107,35 @@
             </ul>
           </li>
         </ul>
+        <!--end of schools-->
 
+        <!--navigation for residents-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Residents<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="hometips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
-              <li><a href="task.html">Task of The Month</a></li>
+              <li><a href="checklist.html">Checklist</a></li>
+              <li class="divider"></li>
+              <li><a href="task.html">Task of the Month</a></li>
+              <li class="divider"></li>
+              <li><a href="resources.html">Resources</a></li>
               <li class="divider"></li>
               <li><a href="video.html">Video</a></li>
               <li class="divider"></li>
-              <li><a href="checklist.html">Check Lists</a></li>
+              <li><a href="rc.html">Committee</a></li>
             </ul>
           </li>
         </ul>
+        <!--end of residents-->
 
+        <!--navigation for works-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Local Government<span class="caret"></span></a>
+            <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
               <li><a href="worktips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
@@ -120,14 +143,15 @@
             </ul>
           </li>
         </ul>
+        <!--end of works-->
 
       </nav>
+      <!--end of navigation-->
 
-	  
-
-	    <!--main slideshow and social media-->		
+	    <!--start content for slideshow here-->
       <div class="row">
-        <!--carousel-->
+
+        <!--main slideshow-->   
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -140,27 +164,37 @@
    
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
+
+            <!--picture here-->
             <div class="item active">
               <img src="images/main1.jpg" alt="...">
               <div class="carousel-caption">
               </div>
             </div>
+
+            <!--picture here-->
             <div class="item">
               <img src="images/main2.jpg" alt="...">
               <div class="carousel-caption">
               </div>
             </div>
+
+            <!--picture here-->
             <div class="item">
               <img src="images/main3.jpg" alt="...">
               <div class="carousel-caption">
                 <h3>Showers building from above with solar panels</h3>
               </div>
             </div>
+
+            <!--picture here-->
             <div class="item">
               <img src="images/main4.jpg" alt="...">
               <div class="carousel-caption">
               </div>
             </div>
+
+            <!--picture here-->
             <div class="item">
               <img src="images/main5.jpg" alt="...">
               <div class="carousel-caption">
@@ -175,27 +209,35 @@
           <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-        </div> <!-- Carousel -->
+
+        </div> 
+        <!-- End of Slideshow -->
       </div>
+
 			
-          <!--box for 3 images in bottom-->
-          <section class="row text-center">
-            <!--first picture-->
-            <article class="col-md-4">  
-              <a href="school.html"><img class="img-responsive" src="images/school.png"></a>
-            </article>
-            <!--second picture-->
-            <article class="col-md-4">
-              <a href="house.html"><img class="img-responsive" src="images/house.png"></a>
-            </article>
+      <!--box for 3 icons in bottom-->
+      <section class="row text-center">
 
-            <!--third picture-->
-            <article class="col-md-4">
-              <a href="office.html"><img class="img-responsive" src="images/government.png"></a>
-            </article>
-          </section>
+        <!--school icon-->
+        <article class="col-md-4">  
+          <a href="school.html"><img class="img-responsive" src="images/school.png"></a>
+        </article>
 
+        <!--house icon-->
+        <article class="col-md-4">
+          <a href="house.html"><img class="img-responsive" src="images/house.png"></a>
+        </article>
+
+        <!--government icon-->
+        <article class="col-md-4">
+          <a href="office.html"><img class="img-responsive" src="images/government.png"></a>
+        </article>
+
+      </section>
+      <!--end of icon box-->
  
     </div>
+    <!--end of whole page/box-->
+
   </body>
 </html>
