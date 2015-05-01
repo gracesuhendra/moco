@@ -7,10 +7,11 @@
     <link rel="shortcut icon" href="images/logo.ico" /> <!--display logo icon in title-->
     <title>Monroe County Energy Challenge</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
-    <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--link to bootstrap style css-->
     <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
+    <link rel="stylesheet" href="css/bootstrap-social.css"> <!--link to personal style css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
 
@@ -29,7 +30,7 @@
         
         <!--box for slogan-->
         <div class="col-md-8 text-right"> <!--to move text to the right-->
-          <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
+          <h1 class="text-capitalize move-lower text-thick"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
         <!--end of slogan box-->
 
@@ -56,14 +57,10 @@
         <!--navigation for about us-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Introduction<span class="caret"></span></a>
             <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
-              <li><a href="about.html">About MCEC</a></li>
-              <li class="divider"></li>
-              <li><a href="prize.html">The Prize</a></li>
-              <li class="divider"></li>
-              <li><a href="challenge.html">The Challenge</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li class="divider"></li>
               <li><a href="partners.html">Our Partners</a></li>
               <li class="divider"></li>
@@ -117,13 +114,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="hometips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
-              <li><a href="checklist.html">Checklist</a></li>
-              <li class="divider"></li>
-              <li><a href="task.html">Task of the Month</a></li>
-              <li class="divider"></li>
               <li><a href="resources.html">Resources</a></li>
-              <li class="divider"></li>
-              <li><a href="video.html">Video</a></li>
               <li class="divider"></li>
               <li><a href="rc.html">Committee</a></li>
             </ul>
@@ -147,40 +138,51 @@
 
       </nav>
       <!--end of navigation-->
-    
-    
+      
 
-	    <!--main content-->	
-      <div class="row">	
-        <h2>How-to Video</h2>
+
+      <!--main content-->
+      <div class="row"> 
+
+        <h2>
+          Check out the resources links and videos below for reducing energy tips!
+        </h2>
         <br/>
         <br/>
-        
-        <section class="row text-center make-space-below">
+
+        <!--navigation for lessons and managements-->
+        <ul div ="#top" class="nav nav-tabs make-space-below center">
+          <li role="presentation"><a href="resources.html">Resources</a></li>
+          <li role="presentation" class="active"><a href="video.html">Videos</a></li>
+        </ul>
+        <!--end of navigation-->
+
+        <div class="row"> 
+
+          <section class="row text-center make-space-below">
           
-          <!--first picture-->
+          <!--first video-->
           <article class="col-md-6">  
             <iframe width="560" height="315" src="https://www.youtube.com/embed/AvbI6Qg0b8Y" frameborder="0" allowfullscreen></iframe>
           </article>
-          <!--second picture-->
+          <!--second video-->
           <article class="col-md-6">
             <iframe width="420" height="315" src="https://www.youtube.com/embed/mQ74FVB9JSI" frameborder="0" allowfullscreen></iframe>
           </article>
-
          
         </section>
 
         <section class="row text-center make-space-below">
 
-           <!--third picture-->
+           <!--third video-->
           <article class="col-md-6">
             <iframe width="420" height="315" src="https://www.youtube.com/embed/4IFJkzY3eMs" frameborder="0" allowfullscreen></iframe>
           </article>
-          <!--first picture-->
+          <!--first video-->
           <article class="col-md-6">  
             <iframe width="560" height="315" src="https://www.youtube.com/embed/H5s1ia50-aw" frameborder="0" allowfullscreen></iframe>
           </article>
-          <!--second picture-->
+          <!--second video-->
           
         </section>
 
@@ -209,10 +211,31 @@
           </article>
 
         </section>
+
+        </div>
+        <!--end of content-->
+
+
       </div>
-     
+      <!--end of main content-->
 
+      <footer>
+    <!--insert image for special characters-->
+        <p> 
+          <img src="images/phone.png" width="16" height="16" alt="" /> (812)349-3837 
+          <img src="images/mail.png" width="16" height="16" alt="" /> mocoenergychallenge@gmail.com
+          
 
+        </p> 
+
+        <p>
+          <a href="https://www.facebook.com/mocoenergychallenge" target="_blank"><img src="images/facebook.png" alt="facebook logo" ></a>
+          <a href="https://twitter.com/mocoenergy" target="_blank"><img src="images/twitter.png" alt="twitter logo" ></a>
+          <a href="http://mocoenergychallenge.org/" target="_blank"><img src="images/wordpress.png" alt="twitter logo" ></a>
+        </p>
+      </footer>
+
+      
     </div>
   </body>
 </html>

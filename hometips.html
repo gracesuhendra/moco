@@ -7,10 +7,11 @@
     <link rel="shortcut icon" href="images/logo.ico" /> <!--display logo icon in title-->
     <title>Monroe County Energy Challenge</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
-    <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--link to bootstrap style css-->
     <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
+    <link rel="stylesheet" href="css/bootstrap-social.css"> <!--link to personal style css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
 
@@ -29,7 +30,7 @@
         
         <!--box for slogan-->
         <div class="col-md-8 text-right"> <!--to move text to the right-->
-          <h1 class="text-capitalize move-lower"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
+          <h1 class="text-capitalize move-lower text-thick"><em>Competing for $5 million and CHANGE!</em></h1> <!--first important title so use h1-->
         </div> 
         <!--end of slogan box-->
 
@@ -56,14 +57,10 @@
         <!--navigation for about us-->
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Introduction<span class="caret"></span></a>
             <!--sub navigation-->
             <ul class="dropdown-menu" role="menu">
-              <li><a href="about.html">About MCEC</a></li>
-              <li class="divider"></li>
-              <li><a href="prize.html">The Prize</a></li>
-              <li class="divider"></li>
-              <li><a href="challenge.html">The Challenge</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li class="divider"></li>
               <li><a href="partners.html">Our Partners</a></li>
               <li class="divider"></li>
@@ -117,13 +114,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="hometips.html">Tips & Tricks</a></li>
               <li class="divider"></li>
-              <li><a href="checklist.html">Checklist</a></li>
-              <li class="divider"></li>
-              <li><a href="task.html">Task of the Month</a></li>
-              <li class="divider"></li>
               <li><a href="resources.html">Resources</a></li>
-              <li class="divider"></li>
-              <li><a href="video.html">Video</a></li>
               <li class="divider"></li>
               <li><a href="rc.html">Committee</a></li>
             </ul>
@@ -148,22 +139,588 @@
       </nav>
       <!--end of navigation-->
     
-    
-    
-	  	<!--main content-->		
-      <div class="row">
-          <h1>How to Save Energy in your Home?</h1>
-          <div class="change-font-size">
-            <ul>
-              <li>Take on energy-saving action each month with <a href=task.html>Task of the Month</a>!</li>
-              <li>Watch these <a href="video.html">videos</a> for tips and tricks.</li>
-              <li>Use <a href="https://www.energystar.gov/index.cfm?fuseaction=HOME_ENERGY_YARDSTICK.showGetStarted&s=footer" target="_blank">energy yardstick</a> to see how much you have saved energy</li>
-              <li>Fill out this <a href="https://docs.google.com/forms/d/1a-qWWhMUMsz2DNC-aOctAfX_l7ZI-bGIEGsNVsYIFzg/viewform" target="_blank">pledge</a> to save energy</li>
-              <li>Take the <a href="https://www.surveymonkey.com/s/MoCoEnergy" target="_blank">Residential Survey</a> on barriers to energy efficiency</li>
-            </ul>
-          </div>
-      </div>
+      
 
+
+      <!--main content-->
+      <div class="row"> 
+
+        <h2>
+          How to save energy in your home?
+        </h2>
+        <h3>Check your checklists and Task of the Month below, and don't forget to Fill out this <a href="https://docs.google.com/forms/d/1a-qWWhMUMsz2DNC-aOctAfX_l7ZI-bGIEGsNVsYIFzg/viewform" target="_blank">pledge</a> and take this <a href="https://www.surveymonkey.com/s/MoCoEnergy" target="_blank">Residential Survey!</a>
+
+        <br/>
+        <br/>
+         <br/>
+
+        <!--navigation for lessons and managements-->
+        <ul div ="#top" class="nav nav-tabs make-space-below center">
+          <li role="presentation" class="active"><a href="hometips.html">CheckLists</a></li>
+          <li role="presentation"><a href="task.html">Task of the Month</a></li>
+        </ul>
+        <!--end of navigation-->
+
+        <div class="row"> 
+
+          <section class="row text-center make-space-below">
+            <h2>High Impact, No/Low Cost, Immediate Savings</h2>
+            <br/>
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal1" class="btn btn-primary btn-lg text-overflow">Don't heat or cool rooms(s) when they are not in use</a>
+
+              <div class="modal fade in" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 5% - 15%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <!--second picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal2" class="btn btn-primary btn-lg text-overflow">Air Dry Clothes</a>
+
+              <div class="modal fade in" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 4%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <!--third picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal3" class="btn btn-primary btn-lg text-overflow">Lower winter thermostat during day (each 2 degrees)</a>
+
+              <div class="modal fade in" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              Heat and cool people not spaces: When home during the day in winter the thermostat might comfortably be set at 62° by dressing appropriately, drinking hot drinks, and using a foot warmer, heated keyboard or heat lamp for a home workstation. In summer 78° can feel comfortable by using fans instead of AC and drinking cool liquids. Many people find that a programmable thermostat ($30 if installed yourself) quickly pays for itself by helping them cut out unnecessary heating and cooling.
+                            </li>
+                            <li>
+                              REBATES AND TAX CREDITS (Reduced cost and lowered payback period of equipment, appliances and home improvements not included in figures except where noted.)
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal4" class="btn btn-primary btn-lg text-overflow">Raise summer thermostat during the day (each 2 degrees)</a>
+
+              <div class="modal fade in" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              Heat and cool people not spaces: When home during the day in winter the thermostat might comfortably be set at 62° by dressing appropriately, drinking hot drinks, and using a foot warmer, heated keyboard or heat lamp for a home workstation. In summer 78° can feel comfortable by using fans instead of AC and drinking cool liquids. Many people find that a programmable thermostat ($30 if installed yourself) quickly pays for itself by helping them cut out unnecessary heating and cooling.
+                            </li>
+                            <li>
+                              REBATES AND TAX CREDITS (Reduced cost and lowered payback period of equipment, appliances and home improvements not included in figures except where noted.)
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+          </section>
+
+          <section class="row text-center make-space-below">
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal5" class="btn btn-primary btn-lg text-overflow">At night, set heat to 55 degree (winter)</a>
+
+              <div class="modal fade in" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+            <!--second picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal6" class="btn btn-primary btn-lg text-overflow">When away, set heat to 55 degree (winter) and turn off AC (summer)</a>
+
+              <div class="modal fade in" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <!--third picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal7" class="btn btn-primary btn-lg text-overflow">Reduce hot shower time to 5 minutes or less</a>
+
+              <div class="modal fade in" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p><strong>Notes:</strong> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal8" class="btn btn-primary btn-lg text-overflow">Lower water heater setting to 120 degrees</a>
+
+              <div class="modal fade in" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+          </section>
+
+          <section class="row text-center make-space-below">
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal9" class="btn btn-primary btn-lg text-overflow">Wash laundry in full loads and in cold water</a>
+
+              <div class="modal fade in" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> SAVE $50</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p><strong>Notes:</strong>  Heating water accounts for 90% of a standard washer’s energy use. A utility company might use 5 kW to treat & deliver 1 unit (1000 gallons) of water. So conserving water (wash full loads) and hot water is important. A water-efficient machine uses 35% to 50% less water than a standard top-load machine.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+            <!--second picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal10" class="btn btn-primary btn-lg text-overflow">Hand wash dishes 2 times per week. If using dishwsher, air dry. </a>
+
+              <div class="modal fade in" id="modal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p><strong>Notes:</strong>  Older dishwashers heat the water to 130° or 140°, accounting for up to 80% of energy used. Look for an Energy Star© they also use 1/3 less water. (Skipping the electric dry cycle can reduce electricity use by 10% or more.) Hand washing dishes is more efficient only if you use one tub of water for wash and one for rinse.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <!--third picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal11" class="btn btn-primary btn-lg text-overflow">Switch from incandescent to CFLs or LEDs</a>
+
+              <div class="modal fade in" id="modal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> $0 to $30 (for six)</p>
+                      <p><strong>Est. Payback Period:</strong> under 1.5 years</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              Many electric utilities offer free CFLs, lowering the cost and payback period to zero for the first six or more. LEDs vary greatly in price and quality; the cheaper ones may not be as efficient and/or last as long as advertised.
+                            </li>
+                            <li>
+                              REBATES AND TAX CREDITS (Reduced cost and lowered payback period of equipment, appliances and home improvements not included in figures except where noted.)
+                            </li>
+                            <li>
+                              Free & greatly reduced lamps available for <a href="https://www.duke-energy.com/residential-savings-store/">Duke Energy customers</a>.
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal12" class="btn btn-primary btn-lg text-overflow">Turn off lights when not in use</a>
+
+              <div class="modal fade in" id="modal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+          </section>
+
+          <section class="row text-center make-space-below">
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal13" class="btn btn-primary btn-lg text-overflow">Seal window & doors with weather stripping and caulk</a>
+
+              <div class="modal fade in" id="modal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> $50</p>
+                      <p><strong>Est. Payback Period:</strong> 1 year</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+        
+
+            <!--third picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal15" class="btn btn-primary btn-lg text-overflow">Rarely or never eat beef, lamb, pork, turkey, farmed salmon</a>
+
+              <div class="modal fade in" id="modal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 3%</p>
+                      <p><strong>Aprox. Cost:</strong> 0</p>
+                      <p><strong>Est. Payback Period:</strong> Immediate</p>
+                      <p>
+                        <strong>Notes: </strong>
+                        Studies show that <a href="http://www.huffingtonpost.com/2014/07/21/beef-environmental-impact_n_5599370.html">beef</a> releases five times the amount of greenhouse gas emission as other meats
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal16" class="btn btn-primary btn-lg text-overflow">Sealing and insulating warm air ducts if outside insulated space</a>
+
+              <div class="modal fade in" id="modal16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> $100</p>
+                      <p><strong>Est. Payback Period:</strong> about 2 years</p>
+                      <p><strong>Notes:</strong> REBATES AND TAX CREDITS (Reduced cost and lowered payback period of equipment, appliances and home improvements not included in figures except where noted.)</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal17" class="btn btn-primary btn-lg text-overflow">Maintain furnace professionally</a>
+
+              <div class="modal fade in" id="modal17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 1%</p>
+                      <p><strong>Aprox. Cost:</strong> $135</p>
+                      <p><strong>Est. Payback Period:</strong> 1 year</p>
+                      <p><strong>Notes:</strong>
+                        Good maintenance keeps equipment at peak efficiency and extends its expected life. Be sure to replace filters frequently as well. 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+          </section>
+
+
+          <section class="row text-center make-space-below">
+            <h2>High Impact, Medium Cost, Medium Payback</h2>
+            <br/>
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal18" class="btn btn-primary btn-lg text-overflow">Replace furnace with high-efficiency furnace or heat pump</a>
+
+              <div class="modal fade in" id="modal18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 5%</p>
+                      <p><strong>Aprox. Cost:</strong> $1,500</p>
+                      <p><strong>Est. Payback Period:</strong> under 3 years</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              This is the difference, before rebates, between a current standard split system (80% furnace, 13.2 SEER 4-ton AC unit) and high-efficiency units (98%, 15.2 SEER). The latter can save $75/year on utilities.
+                            </li>
+                            <li>
+                              Cost and payback period can be greatly reduced with utility rebates and tax incentives.
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+            
+
+            <!--third picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal20" class="btn btn-primary btn-lg text-overflow">Replace a pre-1993 fridge with efficient model</a>
+
+              <div class="modal fade in" id="modal20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> $700</p>
+                      <p><strong>Est. Payback Period:</strong> 3 to 4 years</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              Replace your old unit with a fridge that uses 550 kWh or less per year: the most efficient new models don't have through-the-door water or automatic ice dispensers and have the freezer unit on top rather than on the side. Energy Star models are usually 20% more efficient than standard models, and CEE Tier 3 models are 30% more efficient, saving as much as $200 a year over older models. 
+                            </li>
+                            <li>
+                              But don’t keep a working fridge in your garage! Have your old fridge picked up and recycled by your electric utility and get $50 back!
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal21" class="btn btn-primary btn-lg text-overflow">Seal & increase attic insulation to 14" (R60)</a>
+
+              <div class="modal fade in" id="modal21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 2%</p>
+                      <p><strong>Aprox. Cost:</strong> $1,400</p>
+                      <p><strong>Est. Payback Period:</strong> about 7 years</p>
+                      <p><strong>Notes:</strong> 
+                        <p>
+                          <ul>
+                            <li>
+                              Insulation cost & payback depend on existing conditions. The EPA recommends 12”–14” of attic insulation for homes in Monroe County. 
+                            </li>
+                            <li>
+                              Your utility company may cover 40% of the cost to insulate your attic & walls if done by an approved contractor.
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+          </section>
+
+
+          <section class="row text-center make-space-below">
+            <h2>Very High Impact, High Cost, Longer Payback</h2>
+            <br/>
+            <!--first picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal23" class="btn btn-primary btn-lg text-overflow">Install 5kW solar array (after federal tax credit)</a>
+
+              <div class="modal fade in" id="modal23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 50%</p>
+                      <p><strong>Aprox. Cost:</strong> $14,000</p>
+                      <p><strong>Est. Payback Period:</strong> 15 years</p>
+                      <p><strong>Notes:</strong>                   
+                        <p>
+                          <ul>
+                            <li>
+                              Cost & payback estimates are based on receipt of federal and local property tax credits.
+                            </li>
+                            <li>
+                              • Volunteers with the Southern Indiana Renewable Energy Network, <a href="http://www.sirensolar.org/">SIREN</a>, offer workshops advise homeowners on the best type of system.
+                            </li>
+                          </ul>
+                        </p> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+            <!--second picture-->
+            <article class="col-md-3">  
+              <a data-toggle="modal" href="#modal23" class="btn btn-primary btn-lg text-overflow">Install geothermal heat pump (after federal tax credit)</a>
+
+              <div class="modal fade in" id="modal23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p><strong>Est. Energy Use Reduction:</strong> 40%</p>
+                      <p><strong>Aprox. Cost:</strong> $14,000</p>
+                      <p><strong>Est. Payback Period:</strong> 12 years</p>
+                      <p><strong>Notes:</strong>                   
+                        REBATES AND TAX CREDITS (Reduced cost and lowered payback period of equipment, appliances and home improvements not included in figures except where noted.)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </article>
+          </section>
+
+        </div>
+        <!--end of content-->
+
+
+      </div>
+      <!--end of main content-->
+
+      <footer>
+    <!--insert image for special characters-->
+        <p> 
+          <img src="images/phone.png" width="16" height="16" alt="" /> (812)349-3837 
+          <img src="images/mail.png" width="16" height="16" alt="" /> mocoenergychallenge@gmail.com
+          
+
+        </p> 
+
+        <p>
+          <a href="https://www.facebook.com/mocoenergychallenge" target="_blank"><img src="images/facebook.png" alt="facebook logo" ></a>
+          <a href="https://twitter.com/mocoenergy" target="_blank"><img src="images/twitter.png" alt="twitter logo" ></a>
+          <a href="http://mocoenergychallenge.org/" target="_blank"><img src="images/wordpress.png" alt="twitter logo" ></a>
+        </p>
+      </footer>
+      
 
     </div>
   </body>
